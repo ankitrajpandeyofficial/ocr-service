@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ocr-service
+    env: node
+    plan: free
+    buildCommand: chmod +x .render-build.sh && bash .render-build.sh
+    startCommand: npm start
+    autoDeploy: true
